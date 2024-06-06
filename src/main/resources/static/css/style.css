@@ -1,0 +1,160 @@
+:root {
+    --mainColor: #1769AA;
+    --blueDarkerColor: #1A4364;
+    --hoverColor: #22547e;
+}
+
+@font-face {
+    font-family: 'LoewExtraBold';
+    src: url('../fonts/LoewNext-ExtraBold-BF63fd638a981de.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Loew';
+    src: url('../fonts/LoewNext-Medium-BF63fd638a9ff86.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'LoewExtraBold', sans-serif;
+    font-weight: bold;
+    overflow-x: hidden;
+    background-color: var(--mainColor);
+}
+
+h5 {
+    color: var(--blueDarkerColor);
+}
+
+.navbar {
+    background-color: var(--mainColor);
+}
+
+.enterContainer {
+    width: 100vw!important;
+    height: 100vh !important;
+    background-color: var(--mainColor);
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterContainer input {
+    width: 80%;
+    height: 70px;
+    border: 3px solid rgba(0, 0, 0, .6);
+    font-family: 'Loew', sans-serif;
+
+}
+
+.enterContainer button {
+
+    background-color: var(--blueDarkerColor);
+
+}
+
+.enterContainer button:hover {
+
+    background-color: var(--mainColor);
+
+}
+
+.enterContainer p {
+    color: var(--mainColor);
+
+}
+
+.enterContainer a {
+    color: var(--blueDarkerColor);
+}
+
+.vacanciesContainer .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.vacanciesContainer .search-input {
+    flex: 1;
+    border: 3px solid rgba(0, 0, 0, .6);
+}
+
+.vacanciesContainer .search-button {
+    width: 15%;
+    background-color: var(--mainColor);
+}
+
+.vacanciesContainer .search-button:hover {
+    background-color: var(--hoverColor);
+}
+
+.vacanciesContainer .filter-button {
+    background-color: white !important;
+    border: 3px solid rgba(0, 0, 0, .6);
+}
+
+.vacanciesContainer .filter-button svg {
+    vertical-align: middle;
+}
+
+.vacanciesContainer h3 {
+    font-family: 'Loew', sans-serif;
+    color: var(--mainColor);
+}
+
+.vacanciesContainer p {
+    font-family: 'Loew', sans-serif;
+    margin: 5px;
+}
+
+.vacanciesContainer button { 
+    color: white;
+    background-color: var(--mainColor);
+}
+
+.vacanciesContainer button:hover { 
+    color: white;
+    background-color: var(--hoverColor);
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+}
+.info-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    line-height: 40px;
+}
+.info-box > div{
+    box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 25px 100px 25px 25px;
+    border-radius: 1vw;
+}
+.info-box > div:nth-child(2){
+    padding-right: 220px;
+}
+
+.info-box > div > h2{
+    color: #1869AA;
+}
+.respond{
+    width: 45%;
+    margin: auto;
+    background-color: #1869AA;
+    font-family: sans-serif;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    font-size: 28px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
